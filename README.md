@@ -41,7 +41,7 @@ Google Cloud project를 생성하고,
 ### 1) OCR :
 (1)설치 패키지 : requirements.txt에 있음.
 (2) CLOVA OCR :
-1. https://www.ncloud.com/의 상단에 있는 "콘솔" 클릭.
+1. <https://www.ncloud.com/>의 상단에 있는 "콘솔" 클릭.
 2. 왼쪽의 "Service"탭에서 CLOVA OCR & API Gateway 검색한 뒤, 각각 서비스 신청.
 3. API Gateway의 My Products에서 "Product 생성" 클릭한 뒤, 생성.
 4. CLOVA OCR은 "일반/템플릿" 도메인 생성.
