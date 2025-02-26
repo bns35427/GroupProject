@@ -4,13 +4,13 @@
 
 
 # !!powershell 환경변수 적용하고 코드 실행.
-openai api 환경변수:
+1) openai api 환경변수:
 
 
 setx OPENAI_API_KEY  "<your_openai_key"
 
 ==========================
-google cloud vision api 환경변수:
+2) google cloud vision api 환경변수:
 
 
 $env:GOOGLE_APPLICATION_CREDENTIALS="your_google_service_account_json_file_path"
