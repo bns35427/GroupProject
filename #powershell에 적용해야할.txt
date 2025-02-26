@@ -1,0 +1,10 @@
+openai api 환경변수:
+
+setx OPENAI_API_KEY  "<your_openai_key>"
+
+==========================
+google cloud vision api 환경변수:
+
+$env:GOOGLE_APPLICATION_CREDENTIALS="your_google_service_account_json_file_path"
+
+<<!!반드시 ~~.json파일이 있어야함.
