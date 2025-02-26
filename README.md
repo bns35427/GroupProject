@@ -8,7 +8,7 @@ GOOGLE_APPLICATION_CREDENTIALS 키가 2개인데, (Server & OCR) 2개를 적용�
 1) openai api 환경변수:
 
 
-setx OPENAI_API_KEY  "<your_openai_key"
+setx OPENAI_API_KEY  "<your_openai_key>"
 
 
 2) google cloud vision api 환경변수:
