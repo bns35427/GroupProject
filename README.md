@@ -50,18 +50,13 @@ Google Cloud project를 생성하고,
 (1)설치 패키지 : requirements.txt에 있음.
 ### 4) App :
 # 모바일 개발
+기술스택:안드로이드 스튜디오,Java,xml
 
-1. 기술스택:안드로이드 스튜디오,Java,xml
+1. Firebase 프로젝트 생성 --> 파이어베이스 json데이터 발급 및 프로젝트에 저장 --> Firebase Authentication 활성화 --> 로그인 방법(이메일/비밀번호) 활성화
 
+2. naver Map API —> Naver Cloud Platform 접속, 키 발급(Dynamic Mobile Map,Gecoding 활성화)
 
-2-1.Firebase 프로젝트 생성
-2-2.파이어베이스 json데이터 발급 및 프로젝트에 저장
-2-3.Firebase Authentication 활성화
-2-4.로그인 방법(이메일/비밀번호) 활성화
-
-3.naver Map API —> Naver Cloud Platform 접속, 키 발급(Dynamic Mobile Map,Gecoding 활성화)
-
-4.firestore 활성화
+3. firestore 활성화
 
 (그 외에 환경설정 관련 부분들은 안드로이드 스튜디오에 경우에 Dependency,AndroidManifest.xml에 코드로 저장)
 
