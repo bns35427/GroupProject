@@ -7,8 +7,11 @@
 (1)Visual studio code
 ### 3) Server :
 (1)Visual studio code
+
 (2)Google cloud CLI 
+
 Google cloud CLI 설치 링크 : <https://cloud.google.com/sdk/docs/install-sdk?hl=ko)>
+
 (3)Docker Desktop
 
 (2)-1
