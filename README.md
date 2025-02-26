@@ -46,6 +46,118 @@ Google Cloud project를 생성하고,
 5. CLOVA OCR의 "Domain"에서 "API Gateway 연동" 클릭후, API Gateway 자동 연동의 "수정하기" 클릭.
 ### 2) Finetunning :
 (1)설치 패키지 : requirements.txt에 있음.
+
+
+(1)-1**설치 패키지 및 연결 실행 방법:**
+    1. nltk
+        - 문장 분할을 위한 패키지
+        - 설치 명령어:
+            
+            ```python
+               pip install nltk
+            ```
+            
+    
+    b. transformers
+    
+    - Hugging Face의 AutoModelForSeq2SeqLM과 AutoTokenizer 이용을 위한 패키지
+    - NLLB-200 모델 로드
+    - 설치 명령어:
+        
+        ```python
+        pip install transformers
+        ```
+        
+    
+    c. PyTorch
+    
+    - transformers 라이브러리가 모델 실행하기 위한 백엔드 패키지
+    - GPU를 사용하므로 CUDA 지원 버전 설치 필요
+    - 설치 명령어:
+        
+        ```python
+        pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu126
+        ```
+        
+    
+    d. fastapi
+    
+    - FastAPI 프레임워크 사용, API 서버 구축
+    - 설치 명령어:
+        
+        ```python
+                 pip install fastapi
+        ```
+        
+    
+    e. pydantic
+    
+    - 데이터 검증 및 요청, 응답 모델 정의 패키지
+    - 설치 명령어:
+        
+        ```python
+        pip install pydantic
+        ```
+        
+    
+    f. openai
+    
+    - OpenAI API 호출해 NLLB 번역을 맥락에 맞게 재번역
+    - 설치 명령어:
+        
+        ```python
+        pip install openai
+        ```
+        
+    
+    g. uvicorn
+    
+    - FastAPI를 실행하기 위한 ASGI 서버
+    - 설치 명령어:
+        
+        ```python
+        pip install uvicorn
+        ```
+        
+    - 코드 내에 os.getenv(”OPENAI_API_KEY”)를 사용하므로 OpenAI API 키를 환경변수로 설정하는 과정이 추가적으로 요구됨.
+        - 환경변수 작업을 직접 진행해도 되지만 코드로 작성하여도 가능
+            - Windows:
+                
+                ```python
+                set OPENAI_API_KEY=your-openai-api-key
+                ```
+                
+            - Linux/Mac:
+                
+                ```python
+                export OPENAI_API_KEY=your-openai-api-key
+                ```
+                
+    
+    h. Ngrok
+    
+    - 다른 로컬 서버에서 Fastapi 서버에 접근할 수 있도록 사용
+    - 실행법:
+        1. 자신의 os에 맞는 Ngrok.exe 다운(https://ngrok.com/download)
+        2. Ngrok 회원가입 후 토큰 발급
+        (https://dashboard.ngrok.com/get-started/setup/windows)
+        3. Ngrok.exe 실행하여 발급된 토큰을 등록
+            1. 명령어:
+                
+                ```python
+                ngrok config add-authtoken '본인 토큰'
+                ```
+                
+        4. fastapi를 실행한 포트와 동일한 포트번호를 입력하여 서버 오픈
+            1. 명령어:
+                
+                ```python
+                ngrok http '포트번호'
+                ```
+                
+        5. Forwarding의 https://~~.ngrok.io 주소로 외부에서 접근 가능 
+            - 요청받은 내용을 확인하고자 한다면 Web Interface의 링크에서 확인 가능
+
 ### 3) Server : 
 (1)설치 패키지 : requirements.txt에 있음.
 ### 4) App :
