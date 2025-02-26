@@ -8,7 +8,7 @@
 ### 3) Server :
 (1)Visual studio code
 
-(2)Google cloud CLI 
+(2)Google cloud CLI<<cloud server에 올리기 위해 설치하는 것이기에, 로컬로 돌릴 예정이라면 설치하지 않아도 됨.
 
 Google cloud CLI 설치 링크 : <https://cloud.google.com/sdk/docs/install-sdk?hl=ko)>
 
@@ -36,7 +36,14 @@ Google Cloud project를 생성하고,
 
 ## 코드 실행 전, 세팅(필요한 환경 및 설정사항)
 
+### 1) OCR :
+requirements.txt에 있음.
+### 2) Finetunning :
+requirements.txt에 있음.
 ### 3) Server : 
+requirements.txt에 있음.
+### 4) App :
+
 
 ###
 
