@@ -12,9 +12,6 @@
 
 Google cloud CLI 설치 링크 : <https://cloud.google.com/sdk/docs/install-sdk?hl=ko)>
 
-### 4) App :
-
-
 (2)-1
 google cloud CLI(=gcloud CLI) 설치하기 전, 설정사항이 있음.
 
@@ -32,16 +29,23 @@ Google Cloud project를 생성하고,
 
 (3)Docker Desktop
 
+### 4) App :
+
+
+
+
 
 
 ## 코드 실행 전, 세팅(필요한 환경 및 설정사항)
 
 ### 1) OCR :
-requirements.txt에 있음.
+(1)설치 패키지 : requirements.txt에 있음.
+(2) CLOVA OCR :
+https://www.ncloud.com/의 상단에 있는 "콘솔" 클릭.  CLOVA OCR과 API Gateway와 
 ### 2) Finetunning :
-requirements.txt에 있음.
+(1)설치 패키지 : requirements.txt에 있음.
 ### 3) Server : 
-requirements.txt에 있음.
+(1)설치 패키지 : requirements.txt에 있음.
 ### 4) App :
 
 
