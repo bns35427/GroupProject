@@ -3,7 +3,7 @@
 # GOOGLE_APPLICATION_CREDENTIALS 키가 2개인데, (Server & OCR) 2개를 적용하려고 하니, 충돌되어 naver clova ocr을 사용하기로 결정.
 
 
-# powershell
+# !!powershell 환경변수 적용하고 코드 실행.
 openai api 환경변수:
 
 
