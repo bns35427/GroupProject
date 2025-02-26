@@ -158,6 +158,24 @@ Google Cloud project를 생성하고,
                 
         5. Forwarding의 https://~~.ngrok.io 주소로 외부에서 접근 가능 
             - 요청받은 내용을 확인하고자 한다면 Web Interface의 링크에서 확인 가능
+              
+(2)번역 서비스 파인튜닝을 위한 GPU 클라우드 사용법
+
+1. [vast.ai](http://vast.ai) 회원가입
+2. puTTy, winSCP(다른 방법시 복잡하고 오류가 많음) 설치
+3. SSH 접속을 위해 `ssh-keygen`으로 비공개키와 공개키 쌍을 생성한 뒤, 공개키를 Vast.ai에 등록해요. (보안을 위해 키에 비밀번호를 추가하는 걸 추천)
+4. [vast.ai](http://vast.ai) 홈페이지에서 account-cloud connection로 구글클라우드 동기화
+5. vast.ai에서 인스턴스 추가
+6. 구글 클라우드에 실행시킬 폴더(파인튜닝코드, 데이터셋, requirements.txt) 업로드
+7. vast.ai와 동기화(인스턴스에 클라우드 버튼 누르면 됨. 경로 올바르게)
+8. ssh연결버튼(키모양) 누르면 이런식으로 보임(ex ssh -p 8130 [root@82.141.118.](mailto:root@82.141.118.2)6 -L 8080:localhost:8080) 앞에 8130이 포트번호, 뒤에82.141.118.6이 IP address
+9. ssh접속 위해 puTTy접속(아까 생성한 ppk사용)
+10. 로그인 시 사용자 “root” 입력 비번 설정 시 입력
+11. cd (클라우드에올린파일경로) 로 폴더 안으로 들어가기
+12. pip install -r requiements.txt 로 필요한 파이썬 패키지를 설치
+13. python [파일명.py](http://파일명.py) 로 파인튜닝진행
+14. 40분정도 기다리면 결과 출력 및 모델 저장
+15. winSCP 접속해서 SFTP로 똑같이 접속 후 파일 옮겨서 모델 가져오기
 
 ### 3) Server : 
 (1)설치 패키지 : requirements.txt에 있음.
