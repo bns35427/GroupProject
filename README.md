@@ -12,7 +12,7 @@
 
 Google cloud CLI 설치 링크 : <https://cloud.google.com/sdk/docs/install-sdk?hl=ko)>
 
-(3)Docker Desktop
+
 
 (2)-1
 google cloud CLI(=gcloud CLI) 설치하기 전, 설정사항이 있음.
@@ -28,6 +28,10 @@ Google Cloud project를 생성하고,
 위의 내용은 아래 링크의 가이드에 나와있기에, 가이드대로 따라하면 됨.
 
 <https://cloud.google.com/sdk/docs/install-sdk?hl=ko)>
+
+(3)Docker Desktop
+
+
 
 ## 코드 실행 전, 세팅(필요한 환경 및 설정사항)
 
