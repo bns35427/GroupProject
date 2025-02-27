@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+gunicorn
+firebase-admin
+google-cloud-storage
+python-dotenv
+requests
+httpx
+python-multipart
+openai
