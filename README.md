@@ -1,6 +1,6 @@
 
-# Google Cloud Vision API를 사용해서 OCR은 main에서는 사용되지 않음.
- naver clova ocr파트가 다양한 사진들을 테스트한 결과값이 더 좋았기에 naver clova ocr을 사용하기로 결정.
+# Google Cloud Vision API를 사용한 OCR은 사용되지 않음.
+ <<naver clova ocr파트가 다양한 사진들을 테스트한 결과값이 더 좋았기에 naver clova ocr을 사용하기로 결정.
 
 
 
