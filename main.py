@@ -24,7 +24,7 @@ def detect_text(path):
     full_text = texts[0].description if texts else ""
 
 
-    #!!생각보다 gpt한테 메세지 간단하게만 보내도, google vision api 성능이 좋아서 그런지, 결과값 나쁘지 않은디?!
+    #!!생각보다 gpt한테 messages 간단하게만 보내도, google vision api 텍스트가 있는 박스 인식을 잘해서 그런지, 결과값 나쁘지 않음.
     # 3. GPT API로 문장 분리 (JSON 형식 요청)
     openai_client = OpenAI()
     gpt_response = openai_client.chat.completions.create(
@@ -43,16 +43,16 @@ def detect_text(path):
                 "content": f"다음 텍스트를 문장별로 분리해줘:\n\n{full_text}"
             }
         ],
-        response_format={  # 파라미터 단순화
+        response_format={  
             "type": "json_object"
         }
     )
 
-    # 4. GPT 응답 파싱
+    # 4. GPT 응답 추출
     gpt_output = json.loads(gpt_response.choices[0].message.content)
     gpt_sentences = gpt_output.get("sentences", [])
 
-    # 5. 문장별 시작/끝 단어 바운딩 박스 매핑
+    
     # 5. 문장별 시작/끝 단어 바운딩 박스 매핑 (인덱스 기반)
     output = []
     current_index = 1  # texts[0]은 전체 텍스트이므로 1부터 시작
